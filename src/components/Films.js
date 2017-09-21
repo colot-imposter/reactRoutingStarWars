@@ -12,7 +12,7 @@ class List extends Component {
       let characters = films.characters.map((characters) => {
         let endpoint = characters.substr(characters.indexOf("/api/") + 5);
         return <li key={characters}>
-          <Link to="/character/">{endpoint}</Link>
+          <Link to="/characters/">{endpoint}</Link>
         </li>
       })
       let starships = films.starships.map((starships) => {
